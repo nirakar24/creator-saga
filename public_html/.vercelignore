@@ -1,0 +1,4 @@
+# Hostinger/Apache-only files. Vercel doesn't run PHP and would serve contact.php as plain text.
+.htaccess
+contact.php
+.env*

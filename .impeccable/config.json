@@ -1,0 +1,68 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "overused-font",
+        "value": "geist",
+        "createdAt": "2026-11-01T10:46:24.562Z",
+        "reason": "Project brief: Geist Sans is one of the three fonts the brief recommends; chosen deliberately for this site"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "public_html/index.html"
+        ],
+        "createdAt": "2026-11-01T10:46:24.793Z",
+        "reason": "Static-parse false positive: real-browser detect at 1280x800 and 390x844 reports zero cramped-padding; padding comes from clamp() and logical properties in site.css"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "public_html/content-production/index.html"
+        ],
+        "createdAt": "2026-11-01T10:46:25.032Z",
+        "reason": "Static-parse false positive: real-browser detect at 1280x800 and 390x844 reports zero cramped-padding; padding comes from clamp() and logical properties in site.css"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "public_html/contact/index.html"
+        ],
+        "createdAt": "2026-11-01T10:46:25.255Z",
+        "reason": "Static-parse false positive: real-browser detect at 1280x800 and 390x844 reports zero cramped-padding; padding comes from clamp() and logical properties in site.css"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "public_html/work/index.html"
+        ],
+        "createdAt": "2026-11-01T10:46:25.478Z",
+        "reason": "Static-parse false positive: real-browser detect at 1280x800 and 390x844 reports zero cramped-padding; padding comes from clamp() and logical properties in site.css"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "public_html/services/index.html"
+        ],
+        "createdAt": "2026-11-01T10:46:25.707Z",
+        "reason": "Static-parse false positive: real-browser detect at 1280x800 and 390x844 reports zero cramped-padding; padding comes from clamp() and logical properties in site.css"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "public_html/about/index.html"
+        ],
+        "createdAt": "2026-11-01T10:46:25.927Z",
+        "reason": "Static-parse false positive: real-browser detect at 1280x800 and 390x844 reports zero cramped-padding; padding comes from clamp() and logical properties in site.css"
+      }
+    ]
+  }
+}

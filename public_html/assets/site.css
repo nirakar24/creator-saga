@@ -16,7 +16,7 @@
 
   --font:"Geist", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   --wrap:1280px;
-  --read:700px;
+  --read:650px;
   --gutter:clamp(16px, 4vw, 40px);
   --section:clamp(72px, 10vw, 140px);
   --radius:12px;
@@ -67,7 +67,7 @@ button,input,select,textarea{font:inherit;color:inherit}
 
 /* ---------- type ---------- */
 
-h1,.h1{font-size:clamp(2.6rem,6.2vw,5.25rem);line-height:1.02;letter-spacing:-.04em;font-weight:600;text-wrap:balance}
+h1,.h1{font-size:clamp(2.6rem,5.2vw,4.25rem);line-height:1.02;letter-spacing:-.04em;font-weight:600;text-wrap:balance}
 h2,.h2{font-size:clamp(2rem,4.2vw,3.4rem);line-height:1.06;letter-spacing:-.035em;font-weight:600;text-wrap:balance}
 h3,.h3{font-size:clamp(1.2rem,1.6vw,1.4rem);line-height:1.25;letter-spacing:-.015em;font-weight:600}
 .lede{font-size:clamp(1.1rem,1.5vw,1.3rem);line-height:1.55;color:var(--text-2);max-width:62ch}
@@ -97,7 +97,7 @@ h3,.h3{font-size:clamp(1.2rem,1.6vw,1.4rem);line-height:1.25;letter-spacing:-.01
 .btn-primary{background:var(--accent);color:var(--accent-text)}
 .btn-primary:hover{background:#C3D8FF}
 .btn-primary:active{transform:translateY(1px)}
-.btn-ghost{border-color:var(--border);color:var(--text)}
+.btn-ghost{background:transparent;border-color:var(--border);color:var(--text)}
 .btn-ghost:hover{border-color:var(--text-2)}
 .light .btn-ghost{color:var(--light-text)}
 .btn .arrow{transition:transform .2s var(--ease)}
