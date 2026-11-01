@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #000;
+    color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+img, video{
+    display: block;
+    max-width: 100%;
+}
+
+/* ---------- buttons ---------- */
+
+button, .btn{
+    display: inline-block;
+    border: solid 1px #fff;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    font-size: 1rem;
+    padding: 0.75rem 1.75rem;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+button:hover, .btn:hover{
+    background: #fff;
+    color: #000;
+}
+
+/* ---------- nav ---------- */
+
+nav{
+    position: absolute;
+    inset: 0 0 auto 0;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: clamp(1rem, 3vw, 2rem);
+}
+
+nav .logo img{
+    height: clamp(40px, 6vw, 64px);
+    width: auto;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    border: solid 1px #fff;
+    border-radius: 5rem;
+}
+
+nav li{
+    padding: 0.75rem clamp(1rem, 3vw, 2rem);
+}
+
+/* ---------- full-bleed sections with background image ---------- */
+
+.container, .vid-container{
+    position: relative;
+}
+
+.bg{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay{
+    position: relative;
+    min-height: 100svh;
+    background: radial-gradient(transparent, #000);
+}
+
+/* ---------- hero ---------- */
+
+.home-text{
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(0.75rem, 2vw, 1.5rem);
+    padding: 7rem 1rem 3rem;
+    text-align: center;
+    font-size: clamp(1rem, 2.6vw, 1.6rem);
+}
+
+.middle-home{
+    color: yellow;
+    border: solid 2px #fff;
+    padding: 0.25rem clamp(1rem, 4vw, 3rem);
+    border-radius: 5rem;
+}
+
+.home-btn{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+/* ---------- client profiles ---------- */
+
+.profiles{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: clamp(1.5rem, 5vw, 4rem);
+    padding: clamp(3rem, 8vw, 5rem) 1rem;
+}
+
+.profile-pic{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    transition: scale 0.2s;
+}
+
+.profile-pic:hover{
+    scale: 1.15;
+}
+
+.profile-pic img{
+    width: clamp(72px, 14vw, 160px);
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.profile-pic img.square{
+    border-radius: 0;
+    object-fit: contain;
+}
+
+.followers{
+    font-size: clamp(0.9rem, 1.6vw, 1.2rem);
+}
+
+/* ---------- impact counter ---------- */
+
+.count{
+    width: min(90%, 1100px);
+    margin: 0 auto clamp(3rem, 8vw, 6rem);
+    padding: clamp(2rem, 6vw, 5rem) 1rem;
+    border: solid clamp(4px, 1vw, 10px) #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    font-weight: 100;
+    font-size: clamp(0.9rem, 2vw, 1.5rem);
+}
+
+.counter{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem clamp(2rem, 8vw, 8rem);
+    padding: 1rem 0;
+}
+
+.counter-item p{
+    font-size: clamp(1.4rem, 4.5vw, 3rem);
+}
+
+/* ---------- shared headings ---------- */
+
+.middle{
+    color: orange;
+    font-weight: 800;
+    font-size: 1.3em;
+}
+
+.section-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: clamp(1.4rem, 4.5vw, 4rem);
+    line-height: 1.3;
+    padding: 0 1rem;
+}
+
+.shift-r{ translate: 6% 0; }
+.shift-l{ translate: -6% 0; }
+
+/* ---------- videos ---------- */
+
+.craft-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: clamp(3rem, 8vw, 6rem) 1rem 2rem;
+    font-size: clamp(1.4rem, 4.5vw, 3rem);
+    line-height: 1.4;
+}
+
+.craft-text .shift-r{ translate: 40% 0; }
+.craft-text .shift-r-sm{ translate: 25% 0; }
+
+#sub_text{
+    font-size: clamp(0.95rem, 1.6vw, 1.2rem);
+    margin-top: 1rem;
+    max-width: 40ch;
+}
+
+.shorts{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: clamp(1rem, 3vw, 2.5rem);
+    width: min(92%, 1200px);
+    margin: 0 auto;
+    padding: 2rem 0 clamp(3rem, 8vw, 6rem);
+    align-items: start;
+}
+
+.video{
+    border: solid 1px #fff;
+    border-radius: 2rem;
+    background: #000;
+    padding: 5%;
+}
+
+/* individual `rotate`/`translate` so GSAP's transform doesn't clobber the tilt */
+.video1{ rotate: -7deg; translate: 0 -2rem; }
+.video2{ rotate: -5deg; translate: 0 2rem; }
+.video3{ rotate: 5deg;  translate: 0 1rem; }
+.video4{ rotate: 7deg;  translate: 0 -2rem; }
+
+.vid{
+    width: 100%;
+    aspect-ratio: 9 / 16;
+    object-fit: cover;
+    border-radius: 1.5rem;
+}
+
+/* ---------- steps ---------- */
+
+.steps{
+    width: min(92%, 1300px);
+    margin: clamp(4rem, 10vw, 8rem) auto 0;
+}
+
+.steps-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: clamp(2rem, 4vw, 3rem);
+    margin-top: clamp(2rem, 6vw, 5rem);
+}
+
+.content{
+    position: relative;
+}
+
+.image-container{
+    aspect-ratio: 1;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 15px;
+}
+
+.number{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    font-weight: 600;
+    line-height: 1;
+    color: orange;
+}
+
+.content h2{
+    font-size: clamp(1.3rem, 2.4vw, 2.2rem);
+    margin-top: 1.5rem;
+}
+
+.content p{
+    font-size: clamp(1rem, 1.4vw, 1.2rem);
+    margin-top: 0.75rem;
+}
+
+/* ---------- features ---------- */
+
+.features{
+    width: min(90%, 1200px);
+    margin: clamp(4rem, 10vw, 8rem) auto;
+}
+
+.features-text p{ font-weight: 500; }
+
+.features-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: clamp(1.5rem, 4vw, 3rem);
+    margin-top: clamp(2rem, 6vw, 4rem);
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.item img{
+    width: clamp(80px, 10vw, 120px);
+    filter: hue-rotate(220deg);
+    border-radius: 1rem;
+}
+
+.item-text{
+    font-size: clamp(1rem, 1.6vw, 1.3rem);
+    text-align: center;
+}
+
+/* ---------- subscription ---------- */
+
+.subscription{
+    background: wheat;
+    color: #000;
+    padding: clamp(3rem, 8vw, 6rem) 1rem;
+}
+
+.subscription-text p{ font-weight: 500; }
+
+.registration{
+    width: min(100%, 1000px);
+    margin: clamp(2rem, 6vw, 4rem) auto 0;
+    padding: clamp(2rem, 6vw, 5rem) clamp(1.5rem, 4vw, 3rem);
+    border: solid clamp(4px, 1vw, 10px) #000;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.registration h1{
+    font-size: clamp(2.2rem, 7vw, 5rem);
+    font-weight: 100;
+}
+
+.registration .btn{
+    border: solid 2px #000;
+    font-size: clamp(1.1rem, 2vw, 1.75rem);
+    padding: 0.75rem 2.5rem;
+}
+
+.registration .btn:hover{
+    background: #000;
+    color: aliceblue;
+}
+
+/* ---------- tablet ---------- */
+
+@media (max-width: 900px){
+    .shorts{
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 3.5rem;
+        width: min(88%, 560px);
+    }
+    .steps-content{
+        grid-template-columns: 1fr;
+        max-width: 480px;
+        margin-inline: auto;
+    }
+}
+
+/* ---------- phone ---------- */
+
+@media (max-width: 600px){
+    nav{ font-size: 0.85rem; }
+    nav li{ padding: 0.5rem 0.9rem; }
+    nav .btn{ padding: 0.5rem 1rem; font-size: 0.85rem; }
+
+    .shift-r, .shift-l,
+    .craft-text .shift-r, .craft-text .shift-r-sm{ translate: none; }
+
+    .profiles{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        justify-content: center;
+    }
+
+    .features-grid{ grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+    .item{ padding: 0.5rem; }
+
+    .video{ border-radius: 1.25rem; }
+    .vid{ border-radius: 1rem; }
+    .video1, .video4{ translate: 0 -0.5rem; }
+    .video2, .video3{ translate: 0 0.5rem; }
+
+    .registration{ align-items: stretch; text-align: center; }
+}
